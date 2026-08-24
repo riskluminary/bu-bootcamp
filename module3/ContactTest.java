@@ -54,4 +54,23 @@ public class ContactTest {
     }
 
 
+    @Test
+    void Contact_testObjectIndependence() {
+
+        // @BeforeEach already generates contact c with name "Ada Lovelace"
+
+        Contact c2 = new Contact("Ada Lovelace", "+1 617 555 0101");
+
+        // change name for the second contact so it no longer matches the first
+        c2.setName("Grace Hopper");
+
+        assertEquals("Grace Hopper", c2.getName());
+        assertEquals("Ada Lovelace", c.getName());
+
+
+
+
+    }
+
+
 }

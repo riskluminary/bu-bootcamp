@@ -77,4 +77,14 @@ public class GradeAnalyzerTest {
         assertEquals("F", GradeAnalyzer.getLetterGrade(59));
 
     }
+
+    @Test
+    void calculateAverage_test10Inputs() {
+
+        ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+
+        assertEquals(5.5, GradeAnalyzer.calculateAverage(scores));
+
+
+    }
 }
