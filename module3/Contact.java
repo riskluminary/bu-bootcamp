@@ -22,5 +22,9 @@ class Contact {
         return name + " | " + phone;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
 
 }
